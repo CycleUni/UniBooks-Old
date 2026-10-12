@@ -70,7 +70,7 @@ services:
       # the template's well-known dev secrets.
       - "127.0.0.1:8000:8000"
     volumes:
-      - ./UniBooks-BE:/app
+      - ./UniBooks-BE-Django:/app
     working_dir: /app
     depends_on:
       db:

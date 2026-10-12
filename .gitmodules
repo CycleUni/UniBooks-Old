@@ -1,5 +1,5 @@
 [submodule "UniBooks-BE"]
-	path = UniBooks-BE
+	path = UniBooks-BE-Django
 	url = https://github.com/CycleUni/UniBooks-BE-Django
 [submodule "UniBooks-FE"]
 	path = UniBooks-FE

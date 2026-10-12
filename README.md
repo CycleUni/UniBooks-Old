@@ -18,7 +18,7 @@ UniBooks/                       <- 本倉庫（submodule 容器）
 │   ├── entrypoint.frontend.sh
 │   ├── entrypoint.cfedgechat.sh
 │   └── entrypoint.isbnnet-resolver.sh
-├── UniBooks-BE/                <- submodule（github.com/CycleUni/UniBooks-BE）
+├── UniBooks-BE-Django/         <- submodule（github.com/CycleUni/UniBooks-BE-Django）
 ├── UniBooks-FE/                <- submodule（github.com/CycleUni/UniBooks-FE）
 ├── CFEdgeChat/                 <- submodule（github.com/CycleUni/CFEdgeChat）
 └── ISBN Search Proxy/ISBNnet Resolver/ <- submodule（github.com/CycleUni/ISBNnet-Resolver）
@@ -75,10 +75,10 @@ docker compose down -v
 
 ## 子模組更新
 
-由於源碼是 bind-mount 進容器（在 `docker-compose.yml` 用 `./UniBooks-BE:/app`），本地修改會即時生效（無需重啟）。要拉取上游更新：
+由於源碼是 bind-mount 進容器（在 `docker-compose.yml` 用 `./UniBooks-BE-Django:/app`），本地修改會即時生效（無需重啟）。要拉取上游更新：
 
 ```bash
-git submodule update --remote UniBooks-BE
+git submodule update --remote UniBooks-BE-Django
 ```
 
 ## 自訂環境變數
@@ -95,7 +95,7 @@ docker compose up
 
 ## 管理員帳號
 
-Django 的 `accounts.apps._create_default_superuser` 只在 `DEBUG=False` 時觸發（見 `UniBooks-BE/accounts/apps.py:33`），而本地 docker 環境預設 `DEBUG=True`，所以管理員帳號**不會**自動建立。
+Django 的 `accounts.apps._create_default_superuser` 只在 `DEBUG=False` 時觸發（見 `UniBooks-BE-Django/accounts/apps.py:33`），而本地 docker 環境預設 `DEBUG=True`，所以管理員帳號**不會**自動建立。
 
 第一次啟動後手動建立：
 

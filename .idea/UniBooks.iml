@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="django" name="Django">
       <configuration>
-        <option name="rootFolder" value="$MODULE_DIR$/UniBooks-BE" />
+        <option name="rootFolder" value="$MODULE_DIR$/UniBooks-BE-Django" />
         <option name="settingsModule" value="unibooks/settings.py" />
         <option name="manageScript" value="manage.py" />
         <option name="environment" value="&lt;map/&gt;" />
@@ -14,15 +14,15 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/UniBooks-BE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UniBooks-BE-Django" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/CFEdgeChat/.wrangler" />
       <excludeFolder url="file://$MODULE_DIR$/ISBN Search Proxy/ISBNnet Resolver/.wrangler" />
-      <excludeFolder url="file://$MODULE_DIR$/UniBooks-BE/.venv" />
-      <excludeFolder url="file://$MODULE_DIR$/UniBooks-BE/.wrangler" />
+      <excludeFolder url="file://$MODULE_DIR$/UniBooks-BE-Django/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/UniBooks-BE-Django/.wrangler" />
       <excludeFolder url="file://$MODULE_DIR$/UniBooks-FE/.wrangler" />
     </content>
-    <orderEntry type="jdk" jdkName="~/Documents/GitHub/UniBooks/UniBooks-BE/.venv" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="~/Documents/GitHub/UniBooks/UniBooks-BE-Django/.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
